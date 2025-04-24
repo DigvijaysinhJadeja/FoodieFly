@@ -146,12 +146,7 @@ export const Cart = () => {
                             label="Street Address"
                             fullWidth
                             variant="outlined"
-                            // error={!ErrorMessage("streetAddress")}
-                            // helperText={
-                            //     <ErrorMessage>
-                            //         {(msg)=><span className='text-red-600'>{msg}</span>}
-                            //     </ErrorMessage>
-                            // }
+                            
                             />
                             
                          </Grid>
@@ -162,12 +157,7 @@ export const Cart = () => {
                             label="State"
                             fullWidth
                             variant="outlined"
-                            // error={!ErrorMessage("streetAddress")}
-                            // helperText={
-                            //     <ErrorMessage>
-                            //         {(msg)=><span className='text-red-600'>{msg}</span>}
-                            //     </ErrorMessage>
-                            // }
+                            
                             />
                             
                          </Grid>
@@ -178,12 +168,7 @@ export const Cart = () => {
                             label="City"
                             fullWidth
                             variant="outlined"
-                            // error={!ErrorMessage("streetAddress")}
-                            // helperText={
-                            //     <ErrorMessage>
-                            //         {(msg)=><span className='text-red-600'>{msg}</span>}
-                            //     </ErrorMessage>
-                            // }
+                            
                             />
                             
                          </Grid>
@@ -194,12 +179,7 @@ export const Cart = () => {
                             label="PinCode"
                             fullWidth
                             variant="outlined"
-                            // error={!ErrorMessage("streetAddress")}
-                            // helperText={
-                            //     <ErrorMessage>
-                            //         {(msg)=><span className='text-red-600'>{msg}</span>}
-                            //     </ErrorMessage>
-                            // }
+                            
                             />
                             
                          </Grid>
@@ -210,12 +190,7 @@ export const Cart = () => {
                             label="Country"
                             fullWidth
                             variant="outlined"
-                            // error={!ErrorMessage("streetAddress")}
-                            // helperText={
-                            //     <ErrorMessage>
-                            //         {(msg)=><span className='text-red-600'>{msg}</span>}
-                            //     </ErrorMessage>
-                            // }
+                            
                             />
                             
                          </Grid>
