@@ -27,7 +27,7 @@ export const RestaurantCard = ({item}) => {
         
         <div className={`${ item.open ? 'cursor-pointer' : 'cursor-not-allowed' } relative`}>
             <img className='w-full h-[10rem] rounded-t-md object-cover' 
-            src={item.images[1]} alt=""/> {/* show casing the image of the restaurant from DB*/}
+            src={item.images[0]} alt=""/> {/* show casing the image of the restaurant from DB*/}
 
             {/*comes from material UI */}
             <Chip
@@ -35,7 +35,7 @@ export const RestaurantCard = ({item}) => {
                 className="absolute top-2 left-2"
                 color = {item.open ? "success":"error"}
                 label = {item.open ? "Open":"Closed"}
-
+                
             />
         </div>
         <div className='p-4 textPart lg:flex w-full justify-between'>
