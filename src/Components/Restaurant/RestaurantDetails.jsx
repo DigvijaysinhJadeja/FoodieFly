@@ -82,7 +82,7 @@
                         alt =""/>
                     </Grid>
                     <Grid item xs={12} lg = {6}>
-                        <img className = "w-full h-[40vh] object-cover"src="https://cdn.pixabay.com/photo/2023/09/28/10/26/indian-restaurant-8281116_1280.jpg" 
+                        <img className = "w-full h-[40vh] object-cover"src={restaurant.restaurant?.images[2]}  
                         alt =""/>
                     </Grid>
                   </Grid>
@@ -97,7 +97,7 @@
                   <p className='text-gray-500 flex item-center gap-3'>
                   <LocationOnIcon/> 
                     <span>
-                      Ahmedabad Choke
+                      {restaurant.restaurant?.owner?.address}
                     </span>
                   </p>
                   </div>
@@ -105,7 +105,7 @@
                   <p className='text-gray-500 flex item-center gap-3 mt-1'>
                     <CalendarTodayIcon/> 
                     <span>
-                    Mon - Sat : 10:00am - 10:00pm(Today)
+                      {restaurant.restaurant?.openingHours}
                     </span>
                   </p>
 
