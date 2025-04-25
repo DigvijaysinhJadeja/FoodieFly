@@ -18,7 +18,7 @@ export const CustomerRoute = () => {
             <Route path='/restaurant/:city/:title/:id' element={<RestaurantDetails/>}/>
             <Route path='/cart' element={<Cart/>}/>
             <Route path='/my-profile/*' element={<Profile/>}/>
-            <Route path='https://foodie-fly.vercel.app/payment/success/:id' element={<PaymentSuccess/>}/>
+            <Route path='/payment/success/:id' element={<PaymentSuccess/>}/>
         </Routes>
         <Auth/>    
     </div>
