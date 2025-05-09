@@ -1,5 +1,5 @@
 import { Divider, Grid, Modal, TextField } from '@mui/material';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { CartItem } from './CartItem';
 import { AddressCard } from './AddressCard';
 import AddLocationAltIcon from '@mui/icons-material/AddLocationAlt';
@@ -39,6 +39,18 @@ const initialValues ={
 // })
 
 export const Cart = () => {
+    useEffect(() => {
+        // Remove global background image when the cart page is rendered
+        document.body.style.backgroundImage = "none";
+        document.body.style.backgroundColor = "#1e1e1e"; // Set dark background color
+
+        return () => {
+            // Reset background styles when leaving the cart page
+            document.body.style.backgroundImage = "";
+            document.body.style.backgroundColor = "";
+        };
+    }, []);
+
     const createOrderUsingSelectedAddress=()=>{}
     const handleOpenAddressModel = () => setOpen(true)
     const [open, setOpen] = React.useState(false); 
@@ -82,29 +94,29 @@ export const Cart = () => {
                 {cart.cart?.item.map ( (item) =><CartItem key={item.id} item = {item}/> )}
             <div className='w-full lg:w-[100%] px-5 mt-10'>
             <Divider/>
-                <p className='font-extralight py-5'>Bill Details</p>
+                <p className='font-extralight py-5 text-white'>Bill Details</p>
                 <div className='space-y-3'>
-                    <div className='flex justify-between text-gray-400'>
+                    <div className='flex justify-between text-white'>
                         <p>Item Total</p>
                         <p className=''>₹{cart.cart?.total}</p>
                     </div>
-                    <div className='flex justify-between text-gray-400'>
+                    <div className='flex justify-between  text-white'>
                         <p>Delivery Fee</p>
                         <p>₹21</p>
                     </div>
-                    <div className='flex justify-between text-gray-400'>
+                    <div className='flex justify-between  text-white'>
                         <p>GST & Restaurant Charges</p>
                         <p>₹33</p>
                     </div>
-                    <Divider/>
-                    <div className='flex justify-between text-gray-400'>
+                    <Divider className='to-white'/>
+                    <div className='flex justify-between  text-white'>
                         <p>Total</p>
                         <p>₹{cart.cart?.total+21+33}</p>
                     </div>
                 </div>
             </div>
             </section>
-            <Divider orientation='vertical' flexItem/>
+            <Divider className='to-black' orientation='vertical' flexItem/>
             <section className='lg:w-[70%] flex justify-center px-5 pb-10 lg:pb-0'>
                 <div>
                     <h1 className='text-center font-semibold text-2xl py-10'>Choose Delivery Address</h1>

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from "react";
 import './Home.css';
 import { MultiItemCarousel } from "./MultiItemCarousel";
@@ -23,8 +24,8 @@ export const Home = () => {
             {/* Banner Section */}
             <section className="banner -z-50 relative flex flex-col justify-center items-center">
                 <div className="w-[50vw] z-10 text-center"> 
-                    <p className="text-2xl lg:text-6xl font-Bold z-10 py-5">FoodieFly</p>
-                    <p className="z-10 text-gray-300 text-xl lg:text-4xl">Savor the Speed, Taste the Delight! </p>
+                    <p className="text-2xl lg:text-6xl font-Bold z-10 py-5 text-red-600">FoodieFly</p>
+                    <p className="z-10 text-black text-xl lg:text-4xl">Savor the Speed, Taste the Delight! </p>
                 </div>
                 <div className="cover absolute top-0 left-0 right-0">
 

@@ -1,0 +1,203 @@
+/* Cart Page Container */
+.cart-container, body, html {
+    background-image: none !important; /* Remove any background image */
+    background-color: #1e1e1e !important; /* Dark background */
+    color: #ffffff; /* Light text for contrast */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure full height */
+}
+
+/* Remove global background image for the cart page */
+body {
+    background-image: none !important; /* Remove any global background image */
+    background-color: #1e1e1e !important; /* Set a dark background color */
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #1e1e1e !important; /* Dark background */
+    background-image: none !important; /* Override any background image */
+    color: #ffffff; /* Light text for contrast */
+    padding-top: 4rem; /* Space for the navbar */
+}
+
+/* Main Content */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+/* Left Section (Cart Items) */
+.cart-items-section {
+    flex: 1;
+    background-color: #0a0000; /* Slightly lighter dark background */
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.cart-items-section h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #ff4d4d; /* Accent color */
+}
+
+/* Cart Items */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #444; /* Divider between items */
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.cart-item-details {
+    flex: 1;
+    margin-left: 1rem;
+    color: #ffffff;
+}
+
+.cart-item-details h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.cart-item-details p {
+    font-size: 0.9rem;
+    color: #aaa; /* Subtle text color */
+}
+
+/* Bill Details */
+.bill-details {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bill-details p {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.bill-details p span {
+    color: #ff4d4d; /* Accent color for amounts */
+}
+
+.bill-details .total {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+}
+
+/* Right Section (Address Selection) */
+.address-section {
+    flex: 1;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.address-section h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #ff4d4d; /* Accent color */
+}
+
+.address-card {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.address-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.address-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.address-card p {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* Add New Address Card */
+.add-address-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.add-address-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.add-address-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-left: 1rem;
+}
+
+/* Buttons */
+button {
+    background-color: #ff4d4d;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e63946;
+}

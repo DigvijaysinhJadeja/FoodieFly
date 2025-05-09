@@ -2,8 +2,8 @@ import axios from "axios"
 import { ADD_TO_FAVORITE_FAILURE, ADD_TO_FAVORITE_REQUEST, ADD_TO_FAVORITE_SUCCESS, GET_USER_FAILURE, GET_USER_REQUEST, GET_USER_SUCCESS, LOGIN_FAILURE, LOGIN_REQUEST, LOGIN_SUCCESS, LOGOUT, REGISTER_FAILURE, REGISTER_REQUEST, REGISTER_SUCCESS } from "./ActionType"
 import { api, API_URL } from "../../Config/api"
 
-export const registerUser = (reqData) => async(dispatch)=>{
-
+export const registerUser = (reqData)=>{
+    return async (dispatch)=>{
     dispatch({type:REGISTER_REQUEST});
 
     try {
@@ -25,6 +25,7 @@ export const registerUser = (reqData) => async(dispatch)=>{
         dispatch({type:REGISTER_FAILURE,payload:error})
         console.log("error : ",error)
     }
+}
 }
 
 export const loginUser = (reqData) => async(dispatch)=>{

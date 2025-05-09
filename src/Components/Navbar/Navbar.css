@@ -1,3 +1,61 @@
 li{
     list-style: none;
 }
+
+/* Navbar Container */
+.navbar {
+    padding: 0.8rem 1.25rem; /* Adjust padding for spacing */
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: #1e1e1e; /* Dark background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Logo Section */
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff; /* White text for contrast */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar .logo:hover {
+    color: #e91e63; /* Vibrant hover effect */
+}
+
+/* Navigation Icons */
+.navbar .nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* Space between icons */
+}
+
+/* Icon Buttons */
+.navbar .nav-icons .icon-btn {
+    font-size: 1.5rem;
+    color: #ffffff; /* White icons */
+    transition: color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.navbar .nav-icons .icon-btn:hover {
+    color: #e91e63; /* Vibrant hover effect */
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Avatar */
+.navbar .nav-icons .avatar {
+    background-color: #ffffff; /* White background for avatar */
+    color: #e91e63; /* Vibrant text color */
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.navbar .nav-icons .avatar:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
