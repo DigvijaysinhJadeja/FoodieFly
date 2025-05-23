@@ -1,6 +1,6 @@
 import axios from "axios"
 
-export const API_URL = "https://foodiefly-server-production.up.railway.app"
+export const API_URL = "https://foodiefly-server-1.onrender.com"
 // export const 
 
 export const api = axios.create({
